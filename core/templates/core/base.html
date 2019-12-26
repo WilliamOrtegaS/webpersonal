@@ -24,14 +24,13 @@
 <html lang="es">
 
   <head>
-
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shorcut icon" type="image/png" href="{% static 'core/img/favicon.ico' %}"/>
+    <link rel="shorcut icon" type="image/png" href="{% static 'core/img/favicon.ico' %}">
     <title>{%block title%}{% endblock %} | William Ortega</title>
 
     <!-- Estilos y fuentes del template  -->
-    {% load static %}
     <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -41,7 +40,6 @@
   </head>
 
   <body>
-
     <!-- Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
